@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer class="text-white bg-gray-900 lg:grid lg:grid-cols-5">
       <aside class="hidden lg:relative lg:col-span-2 lg:block">
-        <div style={{marginTop:20,marginLeft:20}}>
+        <div style={{marginTop:20,marginLeft:20,display:"flex",flexDirection:"row",flexFlow: 'row nowrap',}}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6010852008485!2d81.76397671476502!3d21.12846438594454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c434ac2ae871%3A0x4e3568497a7e1d7e!2sInternational%20Institute%20of%20Information%20Technology%2C%20Naya%20Raipur!5e0!3m2!1sen!2sin!4v1656687809693!5m2!1sen!2sin"
             width="600"
