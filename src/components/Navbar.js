@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import Aboutus from './AboutUs';
 
 
 function Navbar() {
@@ -40,8 +41,8 @@ function Navbar() {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    Academic
+                  <a class="nav-link active" aria-current="page" href="">
+                    About Us
                   </a>
                 </li>
 
