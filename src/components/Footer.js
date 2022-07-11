@@ -8,8 +8,8 @@ import { MDBFooter } from "mdb-react-ui-kit";
 
 export default function App() {
   return (
-    <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <MDBFooter className="text-center text-lg-start text-muted bgcolor">
+      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" id="contact">
         <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
         </div>
@@ -41,7 +41,7 @@ export default function App() {
           <Row>
             <Col>
               <h6 className="text-uppercase fw-bold mb-4">
-                <i className="fas fa-gem me-3"></i>Company name
+                <i className="fas fa-gem me-3"></i>IIIT Naya Raipur
               </h6>
               <p>
                 Here you can use rows and columns to organize your footer
@@ -106,14 +106,13 @@ export default function App() {
           </Row>
         </div>
       </section>
-
+      <br/>
       <div
         className="text-center p-4"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
-      >
-        © 2021 Copyright:
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
+        © 2022 International Institute of Information Technology, Naya Raipur
         <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          MDBootstrap.com
+          {/* MDBootstrap.com */}
         </a>
       </div>
     </MDBFooter>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-
+import logo from '../resources/logo.png';
 
 function Navbar() {
   return (
@@ -21,13 +21,14 @@ function Navbar() {
         backgroundRepeat:"no-repeat",
         backgroundImage: `url(https://www.iiitnr.ac.in/sites/default/files/homepage_banner/WhatsApp%20Image%202020-04-29%20at%2012.51.36%20PM.jpeg)`
       }}>
-        <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong p-4 ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              Home
+        <nav className="navbar navbar-expand-lg navbar-dark shadow-5-strong p-4 ">
+          <div className="container-fluid">
+            <a class="navbar-brand" href="https://www.iiitnr.ac.in/">
+              <img src={logo} alt="" width="35" height="35" class="d-inline-block align-text-top"/>
+                Home
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -35,56 +36,62 @@ function Navbar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
                     Academic
                   </a>
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
                     Our Recruiters
                   </a>
                 </li>
-               
 
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
                     Why Us?
                   </a>
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
                     Statistics
                   </a>
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
                     Student
                   </a>
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#contact">
                     Contact Us
                   </a>
                 </li>
+                
+                {/* 
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="https://www.iiitnr.ac.in/">
+                    <img src={logo} width="50px" height="50px" className="logo"/>
+                  </a>
+                </li> */}
                
               </ul>
-              {/* <form class="d-flex">
+              {/* <form className="d-flex">
                 <input
-                  class="form-control me-2"
+                  className="form-control me-2"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <button class="btn btn-outline-success" type="submit">
+                <button className="btn btn-outline-success" type="submit">
                   Search
                 </button>
               </form> */}
