@@ -3,7 +3,7 @@ import back from "../resources/back.jpeg";
 
 const Altheader = () => {
   const headerText = {
-    topBlack: "Let us find your",
+    topBlack: "Let us find your ",
     topBlue: "Forever Home.",
     bottomContent:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt\nillo tenetur fuga ducimus numquam ea!",
@@ -14,7 +14,7 @@ const Altheader = () => {
       <img
         class="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-75 sm:opacity-100"
         src={back}
-        alt="Couple on a bed with a dog"
+        alt="IIIT Naya Raipur"
       />
 
       <div class="hidden sm:block sm:inset-0 sm:absolute sm:bg-gradient-to-r sm:from-white sm:to-transparent"></div>

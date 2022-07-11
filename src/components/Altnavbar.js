@@ -1,25 +1,40 @@
 import React from "react";
 import logo from "../resources/logo.png";
+import Aboutus from "./AboutUs";
 
 const Altnavbar = () => {
-  const sections = [
-    "Home",
-    "About Us",
-    "Why IIITNR",
-    "Timeline",
-    "Statistics",
-    "Our Recruiters",
-    "Contact",
-  ];
+
+  const sections = [{
+    title: 'Home',
+    ref: '#'
+  },{
+    title: 'About Us',
+    ref: '#'
+  },{
+    title: 'Why IIITNR',
+    ref: '#'
+  },{
+    title: 'Timeline',
+    ref: '#'
+  },{
+    title: 'Statistics',
+    ref: '#'
+  },{
+    title: 'Our Recruiters',
+    ref: '#'
+  },{
+    title: 'Contact',
+    ref: '#'
+  }]
 
   const listNavItems = sections.map((element) => (
     <li>
       <a
-        href="#"
+        href={element.ref}
         class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
         aria-current="page"
       >
-        {element}
+        {element.title}
       </a>
     </li>
   ));
