@@ -113,3 +113,7 @@ body{margin-top:20px;}
     left: 0;
     right: -55.8px;
 }
+
+ul li{
+    list-style:disc!important;
+}
