@@ -38,7 +38,7 @@ const Timeline = () => {
       <h3>{element.title}</h3>
       <p>{element.content}</p>
     </li>
-  ));
+  ))
 
   return (
     <div className="card-body">

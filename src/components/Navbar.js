@@ -98,7 +98,7 @@ function Navbar() {
             </div>
           </div>
         </nav>
-        </div>
+      </div>
     </>
   );
 }

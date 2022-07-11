@@ -3,14 +3,17 @@ import "animate.css/animate.min.css";
 export default function Aboutus() {
   return (
     <>
-      <h2
+      <h1
+        class="card-title"
         style={{
-          alignContent: "center",
           textAlign: "center",
+          fontWeight: "bold",
+          fontSize: 40,
+          marginTop: 0,
         }}
       >
         About Us
-      </h2>
+      </h1>
 
       <div
         style={{
