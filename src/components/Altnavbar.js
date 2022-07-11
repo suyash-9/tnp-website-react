@@ -41,7 +41,7 @@ const Altnavbar = () => {
   ));
 
   return (
-    <nav class="bg-blue border-gray-200 py-3 sm:py-2 px-2 sm:px-4 dark:bg-gray-800" >
+    <nav class="bg-blue border-gray-200 py-3 sm:py-2 px-2 sm:px-4 dark:bg-gray-800" style={{ backgroundColor:"rgb(17, 24, 39)"}}>
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a href="https://www.iiitnr.ac.in/" class="flex items-center">
           <img src={logo} class="mr-3 h-6 sm:h-9" alt="IIIT Naya Raipur Logo" />
