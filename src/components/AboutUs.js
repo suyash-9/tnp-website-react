@@ -3,14 +3,14 @@ import "animate.css/animate.min.css";
 export default function Aboutus() {
   return (
     <>
-      <h1
+      <h2
         style={{
           alignContent: "center",
           textAlign: "center",
         }}
       >
         About Us
-      </h1>
+      </h2>
 
       <div
         style={{

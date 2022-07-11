@@ -10,9 +10,9 @@ export default function Footer() {
   return (
     <MDBFooter className="text-center text-lg-start text-muted bgcolor">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" id="contact">
-        <div className="me-5 d-none d-lg-block">
+        {/* <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
-        </div>
+        </div> */}
 
         <div>
           <a href="" className="me-4 text-reset">
@@ -109,9 +109,8 @@ export default function Footer() {
       <br/>
       <div
         className="text-center p-4"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
-      >
-        © 2021 Copyright: 
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
+        © 2021 Copyright:&nbsp;
         <a className="text-reset fw-bold" href="">
             TnP Cell 
         </a>

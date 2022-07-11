@@ -6,7 +6,7 @@ import Statistics from"./components/Statistics";
 import back from './resources/bg1.jpg';
 
 import Aboutus from './components/AboutUs';
-
+import WhyUs from './components/WhyUs';
 import Timeline from './components/Timeline';
 import TestimonyDirector from './components/TestimonyDirector';
 
@@ -21,7 +21,12 @@ function App() {
 
     <br/>
     <TestimonyDirector/>
+    <br/>
+    <br/>
 
+    <WhyUs />
+    <br />
+    
     <Timeline />
     <br />
     <Statistics />

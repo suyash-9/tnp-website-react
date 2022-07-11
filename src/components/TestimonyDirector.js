@@ -7,14 +7,14 @@ import Row from "react-bootstrap/Row";
 export default function TestimonyDirector() {
   return (
     <>
-      <h1
+      <h2
         style={{
           alignContent: "center",
           textAlign: "center",
         }}
       >
         From Director's Desk
-      </h1>
+      </h2>
 
       <div
         className="block"
