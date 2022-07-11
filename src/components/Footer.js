@@ -11,7 +11,7 @@ AOS.init();
 
 export default function Footer() {
   return (
-    <footer class="text-white bg-gray-900 lg:grid lg:grid-cols-5">
+    <footer class="text-white bg-gray-900 lg:grid lg:grid-cols-5" data-aos="fade-up">
       <aside class="hidden lg:relative lg:col-span-2 lg:block">
         <div style={{marginTop:20,marginLeft:20,display:"flex",flexDirection:"row",flexFlow: 'row nowrap',}}>
           <iframe
