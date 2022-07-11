@@ -111,9 +111,9 @@ export default function Footer() {
         className="text-center p-4"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
-        © 2021 Copyright:
-        <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          MDBootstrap.com
+        © 2021 Copyright: 
+        <a className="text-reset fw-bold" href="">
+            TnP Cell 
         </a>
       </div>
     </MDBFooter>
