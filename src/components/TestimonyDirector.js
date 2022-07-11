@@ -8,12 +8,15 @@ export default function TestimonyDirector() {
   return (
     <>
       <h1
+        class="card-title"
         style={{
-          alignContent: "center",
           textAlign: "center",
+          fontWeight: "bold",
+          fontSize: 40,
+          marginTop: 0,
         }}
       >
-        From Director's Desk
+        From Director's Desk 
       </h1>
 
       <div
