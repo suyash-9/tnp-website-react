@@ -4,10 +4,12 @@ export default function Aboutus() {
   return (
     <>
       <h1
-        // class = "card-title"
+        class="card-title"
         style={{
-          alignContent: "center",
           textAlign: "center",
+          fontWeight: "bold",
+          fontSize: 40,
+          marginTop: 0,
         }}
       >
         About Us
