@@ -2,10 +2,13 @@ import React from 'react'
 import Blockquote from "@yozora/react-blockquote";
 import "@yozora/react-blockquote/lib/esm/index.css";
 import "./Recruitus.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Recruitus = () => {
   return (
-    <div class="card-body">
+    <div class="card-body" data-aos="fade-down">
       <h1
         class="card-title"
         style={{
@@ -13,6 +16,7 @@ const Recruitus = () => {
           fontWeight: "bold",
           fontSize: 40,
           marginTop: 0,
+          color:" #0a4275"
         }}
       >
         Why IIIT Naya Raipur? 

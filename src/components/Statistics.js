@@ -15,6 +15,7 @@ export default function Statistics() {
                 fontWeight: "bold",
                 fontSize: 40,
                 marginTop: 0,
+                color: " #0a4275",
               }}
             >
               Statistics (2021-2022)

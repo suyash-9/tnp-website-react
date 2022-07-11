@@ -1,5 +1,8 @@
 import React from "react";
 import "./Timeline.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Timeline = () => {
   const items = [
@@ -38,10 +41,10 @@ const Timeline = () => {
       <h3>{element.title}</h3>
       <p>{element.content}</p>
     </li>
-  ))
+  ));
 
   return (
-    <div className="card-body">
+    <div className="card-body" data-aos="fade-down">
       <h1
         className="card-title"
         style={{
@@ -49,6 +52,7 @@ const Timeline = () => {
           fontWeight: "bold",
           fontSize: 40,
           marginTop: 0,
+          color: " #0a4275",
         }}
       >
         Timeline
