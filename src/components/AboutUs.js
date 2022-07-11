@@ -1,8 +1,12 @@
 import "animate.css/animate.min.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default function Aboutus() {
   return (
     <>
+    <div data-aos="fade-down">
       <h1
         class="card-title"
         style={{
@@ -10,6 +14,7 @@ export default function Aboutus() {
           fontWeight: "bold",
           fontSize: 40,
           marginTop: 0,
+          color:" #0a4275"
         }}
       >
         About Us
@@ -50,6 +55,7 @@ export default function Aboutus() {
         organization. For four years, we nurture our students to develop their
         all round abilities so as when they land up in the competitive world,
         they do not lag behind."
+      </div>
       </div>
     </>
   );

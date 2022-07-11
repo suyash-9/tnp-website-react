@@ -1,5 +1,8 @@
 import React from "react";
 import "./Timeline.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Timeline = () => {
   const items = [
@@ -41,8 +44,8 @@ const Timeline = () => {
   ))
 
   return (
-    <div className="card-body">
-      <h1
+    <div className="card-body" data-aos="fade-down">
+      <h1 
         className="card-title"
         style={{
           textAlign: "center",
