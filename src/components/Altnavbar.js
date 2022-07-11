@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../resources/logo.png";
 import Aboutus from "./AboutUs";
+import "./Navbar.css";
 
 const Altnavbar = () => {
 

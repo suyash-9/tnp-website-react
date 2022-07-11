@@ -1,11 +1,15 @@
 import React from "react";
 import CountUp from "react-countup";
+import VisibilitySensor from 'react-visibility-sensor';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Statistics.css";
+AOS.init();
 
 export default function Statistics() {
   return (
     <>
-      <section class="bg-white">
+      <section class="bg-white" data-aos="fade-right">
         <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
           <div class="max-w-3xl mx-auto text-center">
             <h1
@@ -36,7 +40,13 @@ export default function Statistics() {
                 </dt>
 
                 <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">
-                  <CountUp start={0} end={150} duration={4.0} />+
+                  <CountUp start={0} end={150} duration={2.0}>
+                    {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                  </CountUp>+
                 </dd>
               </div>
 
@@ -46,7 +56,13 @@ export default function Statistics() {
                 </dt>
 
                 <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">
-                  <CountUp start={0} end={45} duration={4.0} />+
+                  <CountUp start={0} end={45} duration={2.0}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                  </CountUp>+
                 </dd>
               </div>
 
