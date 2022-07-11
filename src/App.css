@@ -1,3 +1,9 @@
+main-body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .App {
     text-align: center;
   }
