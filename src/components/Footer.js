@@ -5,10 +5,13 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import { MDBFooter } from "mdb-react-ui-kit";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default function Footer() {
   return (
-    <MDBFooter className="text-center text-lg-start text-muted bgcolor" style={{backgroundColor:" #0a4275" ,color:"white"}}>
+    <MDBFooter className="text-center text-lg-start text-muted bgcolor" style={{backgroundColor:" #0a4275" ,color:"white"}} data-aos="fade-up">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" id="contact">
         <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>

@@ -3,10 +3,14 @@ import Blockquote from "@yozora/react-blockquote";
 import "@yozora/react-blockquote/lib/esm/index.css";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default function TestimonyDirector() {
   return (
     <>
+    <div data-aos="fade-right">
       <h1
         class="card-title"
         style={{
@@ -14,6 +18,7 @@ export default function TestimonyDirector() {
           fontWeight: "bold",
           fontSize: 40,
           marginTop: 0,
+          color:" #0a4275"
         }}
       >
         From Director's Desk 
@@ -57,6 +62,7 @@ export default function TestimonyDirector() {
             
           
         </Blockquote>
+      </div>
       </div>
     </>
   );
