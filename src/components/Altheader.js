@@ -10,7 +10,7 @@ const Altheader = () => {
   };
 
   return (
-    <section class="relative bg-white">
+    <section class="relative bg-white" style={{margin : 0}}>
       <img
         class="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-75 sm:opacity-100"
         src={back}

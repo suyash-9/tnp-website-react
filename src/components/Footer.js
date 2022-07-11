@@ -8,18 +8,15 @@ import { MDBFooter } from "mdb-react-ui-kit";
 
 export default function Footer() {
   return (
-    <MDBFooter className="text-center text-lg-start text-muted bgcolor">
+    <MDBFooter className="text-center text-lg-start text-muted bgcolor" style={{backgroundColor:" #0a4275" ,color:"white"}}>
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" id="contact">
-        {/* <div className="me-5 d-none d-lg-block">
+        <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
-        </div> */}
+        </div>
 
         <div>
           <a href="" className="me-4 text-reset">
             <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
-            <i className="fab fa-twitter"></i>
           </a>
           <a href="" className="me-4 text-reset">
             <i className="fab fa-google"></i>
@@ -30,9 +27,6 @@ export default function Footer() {
           <a href="" className="me-4 text-reset">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="" className="me-4 text-reset">
-            <i className="fab fa-github"></i>
-          </a>
         </div>
       </section>
 
@@ -40,10 +34,10 @@ export default function Footer() {
         <div className="container text-center text-md-start mt-5">
           <Row>
             <Col>
-              <h6 className="text-uppercase fw-bold mb-4">
+              <h6 className="text-uppercase fw-bold mb-4" style={{color:"white"}}>
                 <i className="fas fa-gem me-3"></i>IIIT Naya Raipur
               </h6>
-              <p>
+              <p style={{color:"white"}}>
                 Here you can use rows and columns to organize your footer
                 content. Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.
@@ -64,23 +58,23 @@ export default function Footer() {
             </Col>
 
             <Col>
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
+              <h6 className="text-uppercase fw-bold mb-4" style={{color:"white"}}>Useful links</h6>
+              <p style={{color:"white"}}>
                 <a href="#!" className="text-reset">
                   Pricing
                 </a>
               </p>
-              <p>
+              <p style={{color:"white"}}>
                 <a href="#!" className="text-reset">
                   Settings
                 </a>
               </p>
-              <p>
+              <p style={{color:"white"}}>
                 <a href="#!" className="text-reset">
                   Orders
                 </a>
               </p>
-              <p>
+              <p style={{color:"white"}}>
                 <a href="#!" className="text-reset">
                   Help
                 </a>
@@ -88,18 +82,18 @@ export default function Footer() {
             </Col>
 
             <Col>
-              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-              <p>
+              <h6 className="text-uppercase fw-bold mb-4" style={{color:"white"}}>Contact</h6>
+              <p style={{color:"white"}}>
                 <i className="fas fa-home me-3"></i> New York, NY 10012, US
               </p>
-              <p>
+              <p style={{color:"white"}}>
                 <i className="fas fa-envelope me-3"></i>
                 info@example.com
               </p>
-              <p>
+              <p style={{color:"white"}}>
                 <i className="fas fa-phone me-3"></i> + 01 234 567 88
               </p>
-              <p>
+              <p style={{color:"white"}}>
                 <i className="fas fa-print me-3"></i> + 01 234 567 89
               </p>
             </Col>
@@ -109,8 +103,9 @@ export default function Footer() {
       <br/>
       <div
         className="text-center p-4"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
-        © 2021 Copyright:&nbsp;
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" , color:"white"}}
+      >
+        © 2021 Copyright: 
         <a className="text-reset fw-bold" href="">
             TnP Cell 
         </a>
