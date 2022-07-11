@@ -1,34 +1,50 @@
 import React from "react";
 import logo from "../resources/logo.png";
+import Aboutus from "./AboutUs";
+import "./Navbar.css";
 
 const Altnavbar = () => {
-  const sections = [
-    "Home",
-    "About Us",
-    "Why IIITNR",
-    "Timeline",
-    "Statistics",
-    "Our Recruiters",
-    "Contact",
-  ];
+
+  const sections = [{
+    title: 'Home',
+    ref: '#'
+  },{
+    title: 'About Us',
+    ref: '#'
+  },{
+    title: 'Why IIITNR',
+    ref: '#'
+  },{
+    title: 'Timeline',
+    ref: '#'
+  },{
+    title: 'Statistics',
+    ref: '#'
+  },{
+    title: 'Our Recruiters',
+    ref: '#'
+  },{
+    title: 'Contact',
+    ref: '#'
+  }]
 
   const listNavItems = sections.map((element) => (
     <li>
       <a
-        href="#"
+        href={element.ref}
         class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
         aria-current="page"
       >
-        {element}
+        {element.title}
       </a>
     </li>
   ));
 
   return (
-    <nav class="bg-blue border-gray-200 px-2 sm:px-4 dark:bg-gray-800" >
+    <nav class="bg-blue border-gray-200 py-3 sm:py-2 px-2 sm:px-4 dark:bg-gray-800" >
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a href="https://www.iiitnr.ac.in/" class="flex items-center">
-          <img src={logo} class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+          <img src={logo} class="mr-3 h-6 sm:h-9" alt="IIIT Naya Raipur Logo" />
           <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             Placement Cell IIIT-Naya Raipur
           </span>

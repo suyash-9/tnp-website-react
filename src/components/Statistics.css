@@ -1,0 +1,12 @@
+.center{
+    text-align: center;
+    border-radius: 50px;
+}
+
+.card{
+    border-radius: 0.6rem!important;
+}
+
+.card-text{
+    font-size: 1.2rem;
+}
