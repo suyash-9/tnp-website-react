@@ -9,7 +9,7 @@ AOS.init();
 const Companies = () => {
   const listImages = images.map((element) => (
     <a href={element.website} className="border border-white rounded-xl drop-shadow-2xl shadow-lg bg-white hover:scale-110 transition-all duration-300 cursor-pointer flex justify-center items-center ">
-        <img className="mx-auto w-[300px] aspect-auto" src={element.image} key={element.id} alt={`${element.name} logo`} loading="lazy" />
+        <img className="mx-auto w-[100px] aspect-auto" src={element.image} key={element.id} alt={`${element.name} logo`} loading="lazy" />
     </a>
   ));
   const elementInRow = 4;
