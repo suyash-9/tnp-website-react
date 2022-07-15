@@ -2,7 +2,7 @@ import back from "../assets/back.jpeg";
 
 const Hero = () => {
   const headerText = {
-    topBlack: "Welcome to offical website of",
+    topBlack: "Welcome to offical website of ",
     topBlue: "Placement Cell IIIT-Naya Raipur.",
     bottomContent:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt\nillo tenetur fuga ducimus numquam ea!",
@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section class="relative bg-white" style={{ margin: 0 }}>
       <img
-        class="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-75 sm:opacity-100"
+        class="absolute inset-0 object-[70%] sm:object-[25%] object-cover w-full h-full opacity-30 sm:opacity-100"
         src={back}
         alt="IIIT Naya Raipur"
       />

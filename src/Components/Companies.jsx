@@ -1,19 +1,28 @@
 import "animate.css/animate.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../css/Companies.css";
 import images from "../images";
 
 AOS.init();
 
 const Companies = () => {
   const listImages = images.map((element) => (
-    <a href={element.website} class="border border-white rounded-xl drop-shadow-2xl shadow-lg bg-white hover:scale-110 transition-all duration-300 cursor-pointer flex justify-center items-center ">
-        <img class="mx-auto h-[100px] w-fit md:w-[100px] md:h-fit aspect-auto" src={element.image} key={element.id} alt={`${element.name} logo`} loading="lazy" />
+    <a
+      href={element.website}
+      class="border border-white rounded-xl drop-shadow-2xl shadow-lg bg-white hover:scale-110 transition-all duration-300 cursor-pointer flex justify-center items-center "
+    >
+      <img
+        class="mx-auto h-[100px] w-fit md:w-[100px] md:h-fit aspect-auto"
+        src={element.image}
+        key={element.id}
+        alt={`${element.name} logo`}
+        loading="lazy"
+      />
     </a>
   ));
+
   const elementInRow = 6;
-  const noImages = images.length;
+
   return (
     <div data-aos="fade-down">
       <h1
@@ -30,7 +39,9 @@ const Companies = () => {
       </h1>
       <br />
       <div class="py-3 px-10 place-items-center">
-        <div class={`grid grid-flow-row grid-cols-1 md:grid-cols-${elementInRow} gap-8`}>
+        <div
+          class={`grid grid-flow-row grid-cols-1 md:grid-cols-${elementInRow} gap-8`}
+        >
           {listImages}
         </div>
       </div>

@@ -45,7 +45,7 @@ const Timeline = () => {
   ));
 
   return (
-    <div class="card-body" data-aos="fade-down">
+    <div class="card-body px-5" data-aos="fade-down">
       <h1
         class="card-title"
         style={{

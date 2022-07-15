@@ -48,11 +48,7 @@ const Topnavbar = () => {
     <div class="dark">
       <Navbar fluid={true} rounded={false}>
         <Navbar.Brand href="#">
-          <img
-            src={logo}
-            class="mr-3 h-6 sm:h-9"
-            alt="IIIT Naya Raipur Logo"
-          />
+          <img src={logo} class="mr-3 h-6 sm:h-9" alt="IIIT Naya Raipur Logo" />
           <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             Placement Cell IIIT-Naya Raipur
           </span>
