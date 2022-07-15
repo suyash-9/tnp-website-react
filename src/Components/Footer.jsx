@@ -37,17 +37,112 @@ const Footer = () => {
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div>
             <p class="font-medium">
-              <span class="text-xs tracking-widest uppercase">Call</span>
+              <p class="font-medium" style={{ fontSize: "20px" }}>
+                Contact :
+              </p>
 
-              <a class="block text-2xl sm:text-3xl hover:opacity-75" href="">
-                0123456789
-              </a>
+              <p class="font-medium">Amit Kumar Agrawal (Faculty Incharge)</p>
+              <div style={{ display: "flex" }}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <a
+                  class="hover:opacity-75"
+                  href="tel:+91-771-2474032"
+                  style={{ marginLeft: "6px", fontSize: "13px" }}
+                >
+                  +91-771-2474032
+                </a>
+              </div>
+
+              <div style={{ display: "flex" }}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <a
+                  class="hover:opacity-75"
+                  href="mail:amitag@iiitnr.edu.in"
+                  style={{ marginLeft: "6px", fontSize: "13px" }}
+                >
+                  amitag@iiitnr.edu.in
+                </a>
+              </div>
+              <br />
+
+              <p class="font-medium">IIIT Naya Raipur </p>
+              <div style={{ display: "flex" }}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <a
+                  class="hover:opacity-75"
+                  href="tel:+91-771-2474182"
+                  style={{ marginLeft: "6px", fontSize: "13px" }}
+                >
+                  +91-771-2474182
+                </a>
+              </div>
+
+              <div style={{ display: "flex" }}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <a
+                  class="hover:opacity-75"
+                  href="mail: iiitnr@iiitnr.ac.in"
+                  style={{ marginLeft: "6px", fontSize: "13px" }}
+                >
+                  iiitnr@iiitnr.ac.in
+                </a>
+              </div>
             </p>
+            <br />
 
-            <ul class="mt-8 space-y-2 text-sm">
+            <p class="font-medium" style={{ fontSize: "20px" }}>
+              Address :
+            </p>
+            <p class="font-medium" style={{ fontSize: "13px" ,display:"flex",whiteSpace: 'pre-wrap', overflowWrap: 'break-word'}}>
+              IIIT–Naya Raipur Plot No. 7, Sector 24, <br/>Near Purkhoti Muktangan,<br/>
+              Atal Nagar – 493661 Chhattisgarh
+            </p>
+            {/* <ul class="mt-8 space-y-2 text-sm">
               <li>Monday to Friday: 10am - 5pm</li>
               <li>Weekend: 10am - 3pm</li>
-            </ul>
+            </ul> */}
 
             <div class="flex mt-16 space-x-3">
               <a
