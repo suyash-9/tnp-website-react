@@ -2,8 +2,8 @@ import back from "../assets/back.jpeg";
 
 const Hero = () => {
   const headerText = {
-    topBlack: "Let us find your ",
-    topBlue: "Forever Home.",
+    topBlack: "Welcome to offical website of",
+    topBlue: "Placement Cell IIIT-Naya Raipur.",
     bottomContent:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt\nillo tenetur fuga ducimus numquam ea!",
   };

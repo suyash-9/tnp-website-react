@@ -12,21 +12,45 @@ import Companies from "./Components/Companies";
 const App = () => {
   return (
     <>
-      <Topnavbar />
-      <Hero />
+      <div id="navHome">
+        <Topnavbar />
+        <Hero />
+      </div>
       <br />
-      <Aboutus />
+
+      <div id="navAboutus">
+        <Aboutus />
+      </div>
       <br />
-      <Director />
+
+      <div id="navDirector">
+        <Director />
+      </div>
       <br />
-      <Whyus />
+
+      <div id="navWhyus">
+        <Whyus />
+      </div>
       <br />
-      <Timeline />
+
+      <div id="navTimeline">
+        <Timeline />
+      </div>
       <br />
-      <Statistics />
+
+      <div id="navStatistics">
+        <Statistics />
+      </div>
       <br />
-      <Companies />
-      <Footer />
+
+      <div id="navCompanies">
+        <Companies />
+      </div>
+      <br />
+
+      <div id="navFooter">
+        <Footer />
+      </div>
     </>
   );
 };

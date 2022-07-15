@@ -6,42 +6,42 @@ const Topnavbar = () => {
     {
       id: 1,
       title: "Home",
-      ref: "#",
+      ref: "#navHome",
     },
     {
       id: 2,
       title: "About Us",
-      ref: "#",
+      ref: "#navAboutus",
     },
     {
       id: 3,
       title: "Why IIITNR",
-      ref: "#",
+      ref: "#navWhyus",
     },
     {
       id: 4,
       title: "Timeline",
-      ref: "#",
+      ref: "#navTimeline",
     },
     {
       id: 5,
       title: "Statistics",
-      ref: "#",
+      ref: "#navStatistics",
     },
     {
       id: 6,
       title: "Our Recruiters",
-      ref: "#",
+      ref: "#navCompanies",
     },
     {
       id: 7,
       title: "Contact",
-      ref: "#",
+      ref: "#navFooter",
     },
   ];
 
   const listNavItems = sections.map((element) => (
-    <Navbar.Link href="/navbars">{element.title}</Navbar.Link>
+    <Navbar.Link href={element.ref}>{element.title}</Navbar.Link>
   ));
 
   return (
