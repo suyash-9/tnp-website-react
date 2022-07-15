@@ -1,10 +1,63 @@
 import "../css/Footer.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillMail,
+} from "react-icons/ai";
 
 AOS.init();
 
 const Footer = () => {
+  const soicalMediaHandles = [
+    {
+      id: 1,
+      link: "https://www.facebook.com/IIITNROfficial/",
+      name: "Facebook",
+      tag: <AiFillFacebook color="white" />,
+    },
+    {
+      id: 2,
+      link: "https://www.instagram.com/iiitnrofficial/?hl=en",
+      name: "Instagram",
+      tag: <AiFillInstagram color="white" />,
+    },
+    {
+      id: 3,
+      link: "https://twitter.com/IIITNayaRaipur?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      name: "twitter",
+      tag: <AiFillTwitterCircle color="white" />,
+    },
+    {
+      id: 4,
+      link: "https://www.linkedin.com/in/placement-cell-iiitnr/",
+      name: "Linkedin",
+      tag: <AiFillLinkedin color="white" />,
+    },
+    {
+      id: 5,
+      link: "mailto:placement@iiitnr.edu.in",
+      name: "mail",
+      tag: <AiFillMail color="white" />,
+    },
+  ];
+
+  const listSoicalMediaHandles = soicalMediaHandles.map((element) => (
+    <a
+      class="p-2 border rounded-full border-white/25 hover:opacity-75"
+      href={element.link}
+      target="_blank"
+      rel="noreferrer"
+      key={element.id}
+    >
+      <span class="sr-only"> {element.name} </span>
+      {element.tag}
+    </a>
+  ));
+
   return (
     <footer
       class="text-white bg-gray-900 lg:grid lg:grid-cols-5"
@@ -78,7 +131,7 @@ const Footer = () => {
                 </svg>
                 <a
                   class="hover:opacity-75"
-                  href="mail:amitag@iiitnr.edu.in"
+                  href="mailto:amitag@iiitnr.edu.in"
                   style={{ marginLeft: "6px", fontSize: "13px" }}
                 >
                   amitag@iiitnr.edu.in
@@ -123,7 +176,7 @@ const Footer = () => {
                 </svg>
                 <a
                   class="hover:opacity-75"
-                  href="mail: iiitnr@iiitnr.ac.in"
+                  href="mailto:iiitnr@iiitnr.ac.in"
                   style={{ marginLeft: "6px", fontSize: "13px" }}
                 >
                   iiitnr@iiitnr.ac.in
@@ -135,8 +188,18 @@ const Footer = () => {
             <p class="font-medium" style={{ fontSize: "20px" }}>
               Address :
             </p>
-            <p class="font-medium" style={{ fontSize: "13px" ,display:"flex",whiteSpace: 'pre-wrap', overflowWrap: 'break-word'}}>
-              IIIT–Naya Raipur Plot No. 7, Sector 24, <br/>Near Purkhoti Muktangan,<br/>
+            <p
+              class="font-medium"
+              style={{
+                fontSize: "13px",
+                display: "flex",
+                whiteSpace: "pre-wrap",
+                overflowWrap: "break-word",
+              }}
+            >
+              IIIT–Naya Raipur Plot No. 7, Sector 24, <br />
+              Near Purkhoti Muktangan,
+              <br />
               Atal Nagar – 493661 Chhattisgarh
             </p>
             {/* <ul class="mt-8 space-y-2 text-sm">
@@ -145,7 +208,8 @@ const Footer = () => {
             </ul> */}
 
             <div class="flex mt-16 space-x-3">
-              <a
+              {listSoicalMediaHandles}
+              {/* <a
                 class="p-2 border rounded-full border-white/25 hover:opacity-75"
                 href="https://www.facebook.com/IIITNROfficial"
                 target="_blank"
@@ -205,9 +269,9 @@ const Footer = () => {
                 >
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 class="p-2 border rounded-full border-white/25 hover:opacity-75"
                 href=""
                 target="_blank"
@@ -227,9 +291,9 @@ const Footer = () => {
                     clip-rule="evenodd"
                   />
                 </svg>
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 class="p-2 border rounded-full border-white/25 hover:opacity-75"
                 href=""
                 target="_blank"
@@ -249,7 +313,7 @@ const Footer = () => {
                     clip-rule="evenodd"
                   />
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -258,26 +322,35 @@ const Footer = () => {
               <p class="font-medium">Support</p>
 
               <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
-                <a class="hover:opacity-75" href="">
+                <a
+                  class="hover:opacity-75"
+                  href="mailto:placement@iiitnr.edu.in"
+                >
                   {" "}
                   Contact{" "}
                 </a>
-                <a class="hover:opacity-75" href="">
+                <a
+                  class="hover:opacity-75"
+                  href="mailto:placement@iiitnr.edu.in"
+                >
                   {" "}
                   FAQs{" "}
                 </a>
-                <a class="hover:opacity-75" href="">
+                <a
+                  class="hover:opacity-75"
+                  href="mailto:placement@iiitnr.edu.in"
+                >
                   {" "}
                   Live Chat{" "}
                 </a>
-                <a class="hover:opacity-75" href="">
+                {/* <a class="hover:opacity-75" href="">
                   {" "}
                   Forums{" "}
-                </a>
+                </a> */}
               </nav>
             </div>
 
-            <div>
+            {/* <div>
               <p class="font-medium">Products</p>
 
               <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
@@ -298,7 +371,7 @@ const Footer = () => {
                   Gym Sessions{" "}
                 </a>
               </nav>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -319,17 +392,12 @@ const Footer = () => {
               </a> */}
             </div>
 
-            <p class="mt-4 sm:mt-0">&copy; 2022 TnP Cell.</p>
+            <p>&copy; 2022 IIT Naya Raipur.</p>
           </div>
 
-          <p class="mt-8 text-xs text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            mollitia quia quod repellendus. Porro harum, odio dolore
-            perspiciatis praesentium provident esse consequatur quibusdam
-            aperiam, cupiditate omnis modi in quasi? In, maxime odio vel
-            repellat sed earum? Debitis quaerat facilis animi. Odio natus
-            nostrum laboriosam impedit magnam praesentium asperiores consectetur
-            ipsum.
+          <p class="text-xs text-gray-500">
+            This website is the intellectual property of IIIT Naya Raipur and is
+            maintained by students at Placement Cell IIIT Naya Raipur.
           </p>
         </div>
       </div>
