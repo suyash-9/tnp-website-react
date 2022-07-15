@@ -38,7 +38,7 @@ const Timeline = () => {
   ];
 
   const listItems = items.map((element) => (
-    <li class="event" data-date={element.date}>
+    <li key={element.title} class="event" data-date={element.date}>
       <h3>{element.title}</h3>
       <p>{element.content}</p>
     </li>

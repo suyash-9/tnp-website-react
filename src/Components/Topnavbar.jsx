@@ -41,7 +41,7 @@ const Topnavbar = () => {
   ];
 
   const listNavItems = sections.map((element) => (
-    <Navbar.Link href={element.ref}>{element.title}</Navbar.Link>
+    <Navbar.Link key={element.id} href={element.ref}>{element.title}</Navbar.Link>
   ));
 
   return (
