@@ -38,16 +38,16 @@ const Timeline = () => {
   ];
 
   const listItems = items.map((element) => (
-    <li className="event" data-date={element.date}>
+    <li class="event" data-date={element.date}>
       <h3>{element.title}</h3>
       <p>{element.content}</p>
     </li>
   ));
 
   return (
-    <div className="card-body" data-aos="fade-down">
+    <div class="card-body" data-aos="fade-down">
       <h1
-        className="card-title"
+        class="card-title"
         style={{
           textAlign: "center",
           fontWeight: "bold",
@@ -60,7 +60,7 @@ const Timeline = () => {
       </h1>
       <br />
       <div id="content">
-        <ul className="timeline">{listItems}</ul>
+        <ul class="timeline">{listItems}</ul>
       </div>
     </div>
   );

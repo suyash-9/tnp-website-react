@@ -21,7 +21,7 @@ const Whyus = () => {
         Why IIIT Naya Raipur?
       </h1>
       <div
-        className="block"
+        class="block"
         style={{
           display: "flex",
           justifyContent: "space-evenly",

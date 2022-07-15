@@ -14,7 +14,7 @@ const Statistics = () => {
         <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
           <div class="max-w-3xl mx-auto text-center">
             <h1
-              className="card-title"
+              class="card-title"
               style={{
                 textAlign: "center",
                 fontWeight: "bold",

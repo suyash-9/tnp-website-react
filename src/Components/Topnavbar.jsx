@@ -50,10 +50,10 @@ const Topnavbar = () => {
         <Navbar.Brand href="#">
           <img
             src={logo}
-            className="mr-3 h-6 sm:h-9"
+            class="mr-3 h-6 sm:h-9"
             alt="IIIT Naya Raipur Logo"
           />
-          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+          <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             Placement Cell IIIT-Naya Raipur
           </span>
         </Navbar.Brand>
