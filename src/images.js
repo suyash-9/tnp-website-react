@@ -4,8 +4,8 @@ import image3 from "./assets/companies/codenation.webp";
 import image4 from "./assets/companies/hyperverge.png";
 import image5 from "./assets/companies/juspay.webp";
 import image6 from "./assets/companies/pharmeasy.png";
-import image7 from "./assets/companies/mediaditnet.png";
-import image8 from "./assets/companies/deloitte.webp";
+import image7 from "./assets/companies/deloitte.webp";
+import image8 from "./assets/companies/mediaditnet.png";
 import image9 from "./assets/companies/kpmg.png";
 import image10 from "./assets/companies/zeiss.png";
 import image11 from "./assets/companies/gameskraft.png";
@@ -16,10 +16,6 @@ import image15 from "./assets/companies/apralabs.png";
 import image16 from "./assets/companies/celigo.png";
 import image17 from "./assets/companies/blogvault.png";
 import image18 from "./assets/companies/accenture.png";
-import image43 from "./assets/companies/synopsys.png";
-import image44 from "./assets/companies/glencore.png";
-import image45 from "./assets/companies/neosoft.png";
-
 import image19 from "./assets/companies/Credgenics.jpg";
 import image20 from "./assets/companies/deltax.png";
 import image21 from "./assets/companies/digite.png";
@@ -38,6 +34,15 @@ import image33 from "./assets/companies/tekion.jpg";
 import image34 from "./assets/companies/vassarLabs.jpg";
 import image35 from "./assets/companies/steradian.jpeg";
 import image36 from "./assets/companies/tiger-analytics.png";
+import image37 from "./assets/companies/maq.jpg";
+import image38 from "./assets/companies/SpanIdea.png";
+import image39 from "./assets/companies/cognizant.jpg";
+import image40 from "./assets/companies/ANM-Consultants.png";
+import image41 from "./assets/companies/ZS.png";
+import image42 from "./assets/companies/cosgrid.png";
+import image43 from "./assets/companies/synopsys.png";
+import image44 from "./assets/companies/glencore.png";
+import image45 from "./assets/companies/neosoft.png";
 
 
 export default [
@@ -80,15 +85,14 @@ export default [
   ,
   {
     id: 7,
-    name: "media.net",
-    website: "https://www.media.net/",
-    image: image7
-  }
-  ,
-  {
-    id: 8,
     name: "Deloitte",
     website: "https://www2.deloitte.com/in/en.html",
+    image: image7
+  },
+  {
+    id: 8,
+    name: "media.net",
+    website: "https://www.media.net/",
     image: image8
   }
   ,
@@ -269,6 +273,42 @@ export default [
     name: "Tiger Analytics",
     website: "https://www.tigeranalytics.com/",
     image: image36,
+  },
+  {
+    id: 37,
+    name: "MAQ Software",
+    website: "https://maqsoftware.com/",
+    image: image37,
+  },
+  {
+    id: 38,
+    name: "SpanIdea",
+    website: "https://spanidea.com/",
+    image: image38,
+  },
+  {
+    id: 39,
+    name: "Cognizant",
+    website: "https://www.cognizant.com/",
+    image: image39,
+  },
+  {
+    id: 40,
+    name: "ANM Consultants",
+    website: "https://www.anmconsultants.com/",
+    image: image40,
+  },
+  {
+    id: 41,
+    name: "ZS",
+    website: "https://www.zs.com/",
+    image: image41,
+  },
+  {
+    id: 42,
+    name: "COSGrid",
+    website: "https://www.cosgrid.com/",
+    image: image42,
   },
   {
     id: 43,
