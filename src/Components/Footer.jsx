@@ -52,7 +52,7 @@ const Footer = () => {
             <div class="flex mt-16 space-x-3">
               <a
                 class="p-2 border rounded-full border-white/25 hover:opacity-75"
-                href=""
+                href="https://www.facebook.com/IIITNROfficial"
                 target="_blank"
                 rel="noreferrer"
               >
