@@ -7,7 +7,7 @@ import "../css/Statistics.css";
 
 AOS.init();
 
-export default function Statistics() {
+const Statistics = () => {
   return (
     <>
       <section class="bg-white" data-aos="fade-right">
@@ -108,4 +108,6 @@ export default function Statistics() {
       </section>
     </>
   );
-}
+};
+
+export default Statistics;

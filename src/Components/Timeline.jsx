@@ -2,6 +2,7 @@ import React from "react";
 import "../css/Timeline.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 AOS.init();
 
 const Timeline = () => {

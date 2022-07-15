@@ -1,9 +1,4 @@
 import "../css/Footer.css";
-// import "bootstrap/dist/css/bootstrap.css";
-// import Col from "react-bootstrap/Col";
-// import Row from "react-bootstrap/Row";
-// import "mdb-react-ui-kit/dist/css/mdb.min.css";
-// import { MDBFooter } from "mdb-react-ui-kit";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -245,7 +240,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
-

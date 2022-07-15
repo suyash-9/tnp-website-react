@@ -7,6 +7,7 @@ import Whyus from "./Components/Whyus";
 import Timeline from "./Components/Timeline";
 import Statistics from "./Components/Statistics";
 import Footer from "./Components/Footer";
+import Companies from "./Components/Companies";
 
 const App = () => {
   return (
@@ -23,6 +24,9 @@ const App = () => {
       <Timeline />
       <br />
       <Statistics />
+      <br />
+      <Companies />
+      <br />
       <br />
       <Footer />
     </>
