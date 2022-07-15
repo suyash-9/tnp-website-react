@@ -26,8 +26,6 @@ const App = () => {
       <Statistics />
       <br />
       <Companies />
-      <br />
-      <br />
       <Footer />
     </>
   );
