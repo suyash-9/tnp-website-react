@@ -255,29 +255,37 @@ const Footer = () => {
 
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <p class="font-medium">Support</p>
+              <p class="font-medium" style={{ fontSize: "20px" }}>Quick Links</p>
 
               <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
-                <a class="hover:opacity-75" href="">
+                <a class="hover:opacity-75" href="https://www.iiitnr.ac.in/" style={{ fontSize: "15px" }}>
                   {" "}
-                  Contact{" "}
+                  IIIT Website{" "}
                 </a>
-                <a class="hover:opacity-75" href="">
+                <a class="hover:opacity-75" href="" style={{ fontSize: "15px" }}>
                   {" "}
-                  FAQs{" "}
+                  Placement Brochure{" "}
                 </a>
-                <a class="hover:opacity-75" href="">
+                <a class="hover:opacity-75" href="" style={{ fontSize: "15px" }}>
                   {" "}
-                  Live Chat{" "}
+                  Internship Brochure{" "}
                 </a>
-                <a class="hover:opacity-75" href="">
+                <a class="hover:opacity-75" href="https://www.iiitnr.ac.in/faculty" style={{ fontSize: "15px" }}>
                   {" "}
-                  Forums{" "}
+                  Faculty Profiles{" "}
+                </a>
+                <a class="hover:opacity-75" href="https://www.iiitnr.ac.in/content/btech-curriculum" style={{ fontSize: "15px" }}>
+                  {" "}
+                  Curriculum{" "}
+                </a>
+                <a class="hover:opacity-75" href="http://sac.iiitnr.ac.in/" style={{ fontSize: "15px" }}>
+                  {" "}
+                  Student Activities{" "}
                 </a>
               </nav>
             </div>
 
-            <div>
+            {/* <div>
               <p class="font-medium">Products</p>
 
               <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
@@ -298,7 +306,9 @@ const Footer = () => {
                   Gym Sessions{" "}
                 </a>
               </nav>
-            </div>
+            </div> */}
+
+
           </div>
         </div>
 
