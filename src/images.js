@@ -44,7 +44,6 @@ import image43 from "./assets/companies/synopsys.png";
 import image44 from "./assets/companies/glencore.png";
 import image45 from "./assets/companies/neosoft.png";
 
-
 export default [
   {
     id: 1,
@@ -67,105 +66,93 @@ export default [
   {
     id: 4,
     name: "HyperVerge",
-    website: "https://www.hyperverge.co/" ,
-    image: image4
+    website: "https://www.hyperverge.co/",
+    image: image4,
   },
   {
     id: 5,
     name: "Juspay",
     website: "https://juspay.in/",
-    image: image5
+    image: image5,
   },
   {
     id: 6,
     name: "PharmEasy",
     website: "https://pharmeasy.in/",
-    image: image6
-  }
-  ,
+    image: image6,
+  },
   {
     id: 7,
     name: "Deloitte",
     website: "https://www2.deloitte.com/in/en.html",
-    image: image7
+    image: image7,
   },
   {
     id: 8,
     name: "media.net",
     website: "https://www.media.net/",
-    image: image8
-  }
-  ,
+    image: image8,
+  },
   {
     id: 9,
     name: "KPMG",
     website: "https://home.kpmg/in/en/home.html",
-    image: image9
-  }
-  ,
+    image: image9,
+  },
   {
     id: 10,
     name: "Zeiss",
     website: "https://www.zeiss.co.in/corporate/home.html",
-    image: image10
-  }
-  ,
+    image: image10,
+  },
   {
     id: 11,
     name: "Gameskraft",
     website: "https://www.gameskraft.com/",
-    image: image11
-  }
-  ,
+    image: image11,
+  },
   {
     id: 12,
     name: "Cyware",
     website: "https://cyware.com/",
-    image: image12
-  }
-  ,
+    image: image12,
+  },
   {
     id: 13,
     name: "IBM",
     website: "https://www.ibm.com/us-en/",
-    image: image13
-  }
-  ,
+    image: image13,
+  },
   {
     id: 14,
     name: "Capegemini",
     website: "https://www.capgemini.com/",
-    image: image14
-  }
-  ,
+    image: image14,
+  },
   {
     id: 15,
     name: "Apra Labs",
     website: "https://www.apralabs.com/",
-    image: image15
-  }
-  ,
+    image: image15,
+  },
   {
     id: 16,
     name: "celigo",
     website: "https://www.celigo.com/",
-    image: image16
-  }
-  ,
+    image: image16,
+  },
   {
     id: 17,
     name: "Blogvault",
     website: "https://blogvault.net/",
-    image: image17
-  }
-  ,
+    image: image17,
+  },
   {
     id: 18,
     name: "accenture",
     website: "https://www.accenture.com/in-en",
-    image: image18
-  }
-  ,
+    image: image18,
+  },
   {
     id: 19,
     name: "Credgenics",
@@ -314,20 +301,18 @@ export default [
     id: 43,
     name: "synopsys",
     website: "https://www.synopsys.com/",
-    image: image43
-  }
-  ,
+    image: image43,
+  },
   {
     id: 44,
     name: "Glencore",
     website: "https://www.glencore.com/",
-    image: image44
-  }
-  ,
+    image: image44,
+  },
   {
     id: 45,
     name: "neosoft",
     website: "https://www.neosofttech.com/",
-    image: image45
-  }
+    image: image45,
+  },
 ];
