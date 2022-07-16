@@ -37,11 +37,20 @@ const Footer = () => {
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div>
             <p class="font-medium">
-              <p class="font-medium" style={{ fontSize: "20px" }}>
+              <p
+                class="font-medium"
+                style={{
+                  fontSize: "20px",
+                  textDecorationLine: "underline",
+                  textUnderlineOffset: "10px",
+                }}
+              >
                 Contact :
               </p>
 
-              <p class="font-medium">Amit Kumar Agrawal (Faculty Incharge)</p>
+              <p class="font-medium" style={{ marginTop: "12px" }}>
+                Amit Kumar Agrawal (Faculty Incharge)
+              </p>
               <div style={{ display: "flex" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,6 +86,7 @@ const Footer = () => {
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <a
+                  onClick={() => window.location = 'mailto:amitag@gmail.com'}
                   class="hover:opacity-75"
                   href="mail:amitag@iiitnr.edu.in"
                   style={{ marginLeft: "6px", fontSize: "13px" }}
@@ -122,8 +132,9 @@ const Footer = () => {
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <a
+                  onClick={() => window.location = 'mailto:iiitnr@iiitnr.ac.in'}
                   class="hover:opacity-75"
-                  href="mail: iiitnr@iiitnr.ac.in"
+                  href=""
                   style={{ marginLeft: "6px", fontSize: "13px" }}
                 >
                   iiitnr@iiitnr.ac.in
@@ -132,11 +143,29 @@ const Footer = () => {
             </p>
             <br />
 
-            <p class="font-medium" style={{ fontSize: "20px" }}>
+            <p
+              class="font-medium"
+              style={{
+                fontSize: "20px",
+                textDecorationLine: "underline",
+                textUnderlineOffset: "10px",
+              }}
+            >
               Address :
             </p>
-            <p class="font-medium" style={{ fontSize: "13px" ,display:"flex",whiteSpace: 'pre-wrap', overflowWrap: 'break-word'}}>
-              IIIT–Naya Raipur Plot No. 7, Sector 24, <br/>Near Purkhoti Muktangan,<br/>
+            <p
+              class="font-medium"
+              style={{
+                fontSize: "13px",
+                display: "flex",
+                whiteSpace: "pre-wrap",
+                overflowWrap: "break-word",
+                marginTop: "12px",
+              }}
+            >
+              IIIT–Naya Raipur Plot No. 7, Sector 24, <br />
+              Near Purkhoti Muktangan,
+              <br />
               Atal Nagar – 493661 Chhattisgarh
             </p>
             {/* <ul class="mt-8 space-y-2 text-sm">
@@ -191,7 +220,7 @@ const Footer = () => {
 
               <a
                 class="p-2 border rounded-full border-white/25 hover:opacity-75"
-                href=""
+                href="https://twitter.com/IIITNayaRaipur"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -207,7 +236,7 @@ const Footer = () => {
                 </svg>
               </a>
 
-              <a
+              {/* <a
                 class="p-2 border rounded-full border-white/25 hover:opacity-75"
                 href=""
                 target="_blank"
@@ -227,27 +256,25 @@ const Footer = () => {
                     clip-rule="evenodd"
                   />
                 </svg>
-              </a>
+              </a> */}
 
               <a
                 class="p-2 border rounded-full border-white/25 hover:opacity-75"
-                href=""
+                href="https://www.linkedin.com/company/tnpiiitnr/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span class="sr-only"> Dribbble </span>
+                <span class="sr-only"> Linkedin </span>
 
                 <svg
-                  class="w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
                   fill="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                    clip-rule="evenodd"
-                  />
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                 </svg>
               </a>
             </div>
@@ -255,30 +282,63 @@ const Footer = () => {
 
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <p class="font-medium" style={{ fontSize: "20px" }}>Quick Links</p>
+              <p
+                class="font-medium"
+                style={{
+                  fontSize: "20px",
+                  textDecorationLine: "underline",
+                  textUnderlineOffset: "10px",
+                }}
+              >
+                Quick Links
+              </p>
 
               <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
-                <a class="hover:opacity-75" href="https://www.iiitnr.ac.in/" style={{ fontSize: "15px" }}>
+                <a
+                  class="hover:opacity-75"
+                  href="https://www.iiitnr.ac.in/"
+                  style={{ fontSize: "15px" }}
+                >
                   {" "}
                   IIIT Website{" "}
                 </a>
-                <a class="hover:opacity-75" href="" style={{ fontSize: "15px" }}>
+                <a
+                  class="hover:opacity-75"
+                  href=""
+                  style={{ fontSize: "15px" }}
+                >
                   {" "}
                   Placement Brochure{" "}
                 </a>
-                <a class="hover:opacity-75" href="" style={{ fontSize: "15px" }}>
+                <a
+                  class="hover:opacity-75"
+                  href=""
+                  style={{ fontSize: "15px" }}
+                >
                   {" "}
                   Internship Brochure{" "}
                 </a>
-                <a class="hover:opacity-75" href="https://www.iiitnr.ac.in/faculty" style={{ fontSize: "15px" }}>
+                <a
+                  class="hover:opacity-75"
+                  href="https://www.iiitnr.ac.in/faculty"
+                  style={{ fontSize: "15px" }}
+                >
                   {" "}
                   Faculty Profiles{" "}
                 </a>
-                <a class="hover:opacity-75" href="https://www.iiitnr.ac.in/content/btech-curriculum" style={{ fontSize: "15px" }}>
+                <a
+                  class="hover:opacity-75"
+                  href="https://www.iiitnr.ac.in/content/btech-curriculum"
+                  style={{ fontSize: "15px" }}
+                >
                   {" "}
                   Curriculum{" "}
                 </a>
-                <a class="hover:opacity-75" href="http://sac.iiitnr.ac.in/" style={{ fontSize: "15px" }}>
+                <a
+                  class="hover:opacity-75"
+                  href="http://sac.iiitnr.ac.in/"
+                  style={{ fontSize: "15px" }}
+                >
                   {" "}
                   Student Activities{" "}
                 </a>
@@ -307,8 +367,6 @@ const Footer = () => {
                 </a>
               </nav>
             </div> */}
-
-
           </div>
         </div>
 
