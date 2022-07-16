@@ -90,11 +90,20 @@ const Footer = () => {
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div>
             <p class="font-medium">
-              <p class="font-medium" style={{ fontSize: "20px" }}>
+              <p
+                class="font-medium"
+                style={{
+                  fontSize: "20px",
+                  textDecorationLine: "underline",
+                  textUnderlineOffset: "10px",
+                }}
+              >
                 Contact :
               </p>
 
-              <p class="font-medium">Amit Kumar Agrawal (Faculty Incharge)</p>
+              <p class="font-medium" style={{ marginTop: "12px" }}>
+                Amit Kumar Agrawal (Faculty Incharge)
+              </p>
               <div style={{ display: "flex" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,6 +139,7 @@ const Footer = () => {
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <a
+                  onClick={() => window.location = 'mailto:amitag@gmail.com'}
                   class="hover:opacity-75"
                   href="mail:amitag@iiitnr.edu.in"
                   style={{ marginLeft: "6px", fontSize: "13px" }}
@@ -175,8 +185,9 @@ const Footer = () => {
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <a
+                  onClick={() => window.location = 'mailto:iiitnr@iiitnr.ac.in'}
                   class="hover:opacity-75"
-                  href="mail: iiitnr@iiitnr.ac.in"
+                  href=""
                   style={{ marginLeft: "6px", fontSize: "13px" }}
                 >
                   iiitnr@iiitnr.ac.in
@@ -185,7 +196,14 @@ const Footer = () => {
             </p>
             <br />
 
-            <p class="font-medium" style={{ fontSize: "20px" }}>
+            <p
+              class="font-medium"
+              style={{
+                fontSize: "20px",
+                textDecorationLine: "underline",
+                textUnderlineOffset: "10px",
+              }}
+            >
               Address :
             </p>
             <p
