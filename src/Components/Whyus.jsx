@@ -59,7 +59,7 @@ const Whyus = () => {
                   • Students are allowed to continue the same project from 5th
                   to 8th Semester to increase the depth or they can take up
                   different projects in different domains to increase their
-                  breath.
+                  breadth.
                 </li>
               </ul>
             </div>

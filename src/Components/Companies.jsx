@@ -22,8 +22,6 @@ const Companies = () => {
     </a>
   ));
 
-  const elementInRow = 6;
-
   return (
     <div data-aos="fade-down">
       <h1
@@ -41,7 +39,7 @@ const Companies = () => {
       <br />
       <div class="py-3 px-10 place-items-center">
         <div
-          class={`grid grid-flow-row grid-cols-1 md:grid-cols-${elementInRow} gap-8`}
+          class={`grid grid-cols-1 hover:grid-cols-6 gap-8`}
         >
           {listImages}
         </div>
