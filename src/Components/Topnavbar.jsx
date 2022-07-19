@@ -1,5 +1,8 @@
-import { Navbar } from "flowbite-react";
+import { Navbar, Dropdown } from "flowbite-react";
 import logo from "../assets/logo.png";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import placementBrochure from "../assets/brochures/placementbrochure.pdf";
+import internshipBrochure from "../assets/brochures/internshipbrochure.pdf";
 
 const Topnavbar = () => {
   const sections = [
@@ -41,7 +44,9 @@ const Topnavbar = () => {
   ];
 
   const listNavItems = sections.map((element) => (
-    <Navbar.Link key={element.id} href={element.ref}>{element.title}</Navbar.Link>
+    <Navbar.Link key={element.id} href={element.ref}>
+      {element.title}
+    </Navbar.Link>
   ));
 
   return (
@@ -54,7 +59,25 @@ const Topnavbar = () => {
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />
-        <Navbar.Collapse>{listNavItems}</Navbar.Collapse>
+        <Navbar.Collapse>
+          {listNavItems}
+          <div className="flex md:order-2" class="text-white">
+            <Dropdown
+              label="Brochure"
+              inline={true}
+              fluid={true}
+              positionInGroup={"middle"}
+            >
+              <a href={placementBrochure}>
+                <Dropdown.Item>Placement Brochure</Dropdown.Item>
+              </a>
+              <Dropdown.Divider />
+              <a href={internshipBrochure}>
+                <Dropdown.Item>Internship Brochure</Dropdown.Item>
+              </a>
+            </Dropdown>
+          </div>
+        </Navbar.Collapse>
       </Navbar>
     </div>
   );

@@ -8,6 +8,8 @@ import {
   AiFillLinkedin,
   AiFillMail,
 } from "react-icons/ai";
+import placementBrochure from "../assets/brochures/placementbrochure.pdf";
+import internshipBrochure from "../assets/brochures/internshipbrochure.pdf";
 
 AOS.init();
 
@@ -139,7 +141,7 @@ const Footer = () => {
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <a
-                  onClick={() => window.location = 'mailto:amitag@gmail.com'}
+                  onClick={() => (window.location = "mailto:amitag@gmail.com")}
                   class="hover:opacity-75"
                   href="mail:amitag@iiitnr.edu.in"
                   style={{ marginLeft: "6px", fontSize: "13px" }}
@@ -185,7 +187,9 @@ const Footer = () => {
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <a
-                  onClick={() => window.location = 'mailto:iiitnr@iiitnr.ac.in'}
+                  onClick={() =>
+                    (window.location = "mailto:iiitnr@iiitnr.ac.in")
+                  }
                   class="hover:opacity-75"
                   href=""
                   style={{ marginLeft: "6px", fontSize: "13px" }}
@@ -213,6 +217,7 @@ const Footer = () => {
                 display: "flex",
                 whiteSpace: "pre-wrap",
                 overflowWrap: "break-word",
+                marginTop: "12px",
               }}
             >
               IIIT–Naya Raipur Plot No. 7, Sector 24, <br />
@@ -225,9 +230,7 @@ const Footer = () => {
               <li>Weekend: 10am - 3pm</li>
             </ul> */}
 
-            <div class="flex mt-16 space-x-3">
-              {listSoicalMediaHandles}
-            </div>
+            <div class="flex mt-16 space-x-3">{listSoicalMediaHandles}</div>
           </div>
 
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -247,7 +250,7 @@ const Footer = () => {
                 </a>
                 <a
                   class="hover:opacity-75"
-                  href=""
+                  href={placementBrochure}
                   style={{ fontSize: "15px" }}
                 >
                   {" "}
@@ -255,7 +258,7 @@ const Footer = () => {
                 </a>
                 <a
                   class="hover:opacity-75"
-                  href=""
+                  href={internshipBrochure}
                   style={{ fontSize: "15px" }}
                 >
                   {" "}
