@@ -247,9 +247,10 @@ const Footer = () => {
                 Submit
               </Button> */}
 
-              <Button outline={false} gradientDuoTone="cyanToBlue" onClick={() => openInNewTab('https://forms.gle/Kh3QpW2zrUXEc5gt9')}>
+              {/* <Button outline={false} gradientDuoTone="cyanToBlue" onClick={() => openInNewTab('https://forms.gle/Kh3QpW2zrUXEc5gt9')}>
                 Contact Us
-              </Button>
+              </Button> */}
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgbHZT0KD5Ok1GUbyXwiJNktf44uvh51fGO9XCkuVCVJXMfQ/viewform?embedded=true" class="w-4/5 h-96" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </p>
             {/* <ul class="mt-8 space-y-2 text-sm">
               <li>Monday to Friday: 10am - 5pm</li>
