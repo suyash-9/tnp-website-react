@@ -92,6 +92,10 @@ const Footer = () => {
       });
   };
 
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <footer
       class="text-white bg-gray-900 lg:grid lg:grid-cols-5"
@@ -167,11 +171,11 @@ const Footer = () => {
                   textUnderlineOffset: "10px",
                 }}
               >
-                Reach Us :
+                Want to Reach Us :
               </p>
               <br />
 
-              <div class="relative mb-6">
+              {/* <div class="relative mb-6">
                 <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                   <svg
                     aria-hidden="true"
@@ -237,10 +241,14 @@ const Footer = () => {
                   onChange={inputsHandler}
                   value={inputField.contact}
                 />
-              </div>
+              </div> */}
 
-              <Button outline={false} gradientDuoTone="cyanToBlue" onClick={submitButton}>
+              {/* <Button outline={false} gradientDuoTone="cyanToBlue" onClick={submitButton}>
                 Submit
+              </Button> */}
+
+              <Button outline={false} gradientDuoTone="cyanToBlue" onClick={() => openInNewTab('https://forms.gle/Kh3QpW2zrUXEc5gt9')}>
+                Contact Us
               </Button>
             </p>
             {/* <ul class="mt-8 space-y-2 text-sm">
