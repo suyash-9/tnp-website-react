@@ -12,13 +12,45 @@ import {
 } from "react-icons/ai";
 import placementBrochure from "../assets/brochures/placementbrochure.pdf";
 import internshipBrochure from "../assets/brochures/internshipbrochure.pdf";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+import logo from "../assets/logo.png";
+
+
 
 AOS.init();
 
-const baseURL = "https://sheet.best/api/sheets/320007a0-d938-4c34-87b8-526164381324";
+const baseURL =
+  "https://sheet.best/api/sheets/320007a0-d938-4c34-87b8-526164381324";
 
 const Footer = () => {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    contact: "",
+  });
+  const { name, email, contact } = data;
+
+  const handleChange = (e) =>
+    setData({ ...data, [e.target.name]: e.target.value });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await fetch(
+        "https://v1.nocodeapi.com/suyash9/google_sheets/zlCptpSFskkhHvkA",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify([[name, email, contact]]),
+        }
+      );
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const soicalMediaHandles = [
     {
       id: 1,
@@ -65,99 +97,78 @@ const Footer = () => {
     </a>
   ));
 
-  const [inputField, setInputField] = useState({
-    name: "",
-    email: "",
-    contact: "",
-  });
-
-  useEffect(() => {
-    axios.get(`${baseURL}/1`).then((response) => {
-      setInputField(response.data);
-    });
-  }, []);
-
-  const inputsHandler = (e) => {
-    setInputField((inputField) => ({
-      ...inputField,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
-  const submitButton = () => {
-    axios
-      .post(`${baseURL}/1`)
-      .then((response) => {
-        setInputField(response.data);
-      });
-  };
-
-  const openInNewTab = url => {
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <footer
       class="text-white bg-gray-900 lg:grid lg:grid-cols-5"
       data-aos="fade-up"
     >
-      <aside class="hidden lg:relative lg:col-span-2 lg:block">
+      <div class=" lg:relative lg:col-span-2 lg:block">
         <div class="grid grid-cols-1">
-          <div
+          <div class="flex flex-row"
             style={{
-              marginTop: 20,
+              marginTop: 50,
               marginLeft: 20,
-              display: "flex",
-              flexDirection: "column",
-              flexFlow: "column nowrap",
-
-              marginTop: "50px",
+              
             }}
           >
-            <p
-              class="font-medium"
-              style={{
-                fontSize: "20px",
-                textDecorationLine: "underline",
-                textUnderlineOffset: "10px",
-              }}
-            >
-              Address :
-            </p>
-            <p
-              class="font-medium"
-              style={{
-                fontSize: "13px",
-                display: "flex",
-                whiteSpace: "pre-wrap",
-                overflowWrap: "break-word",
-                marginTop: "12px",
-              }}
-            >
-              IIIT–Naya Raipur Plot No. 7, Sector 24, Near Purkhoti Muktangan,
+            <div class="flex flex-col">
+            <img src={logo} style={{height:150, width:150,display:"flex",justifyContent:"center",alignItems:"center"}} alt="IIIT Naya Raipur Logo" />
+              <p
+                class="font-medium "
+                style={{
+                  fontSize: "20px",
+                  textDecorationLine: "underline",
+                  textUnderlineOffset: "10px",
+                  marginTop:20
+                }}
+              >
+                Address :
+              </p>
+              <p
+                class="font-medium"
+                style={{
+                  fontSize: "13px",
+                  display: "flex",
+                  whiteSpace: "pre-wrap",
+                  overflowWrap: "break-word",
+                  marginTop: "12px",
+                }}
+              >
+                IIIT–Naya Raipur Plot No. 7, Sector 24, Near Purkhoti Muktangan,
+                <br />
+                Atal Nagar – 493661 Chhattisgarh
+              </p>
               <br />
-              Atal Nagar – 493661 Chhattisgarh
-            </p>
-            <br />
-
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6010852008485!2d81.76397671476502!3d21.12846438594454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c434ac2ae871%3A0x4e3568497a7e1d7e!2sInternational%20Institute%20of%20Information%20Technology%2C%20Naya%20Raipur!5e0!3m2!1sen!2sin!4v1656687809693!5m2!1sen!2sin"
-              width="600"
-              height="450"
-              marginHeight={40}
-              style={{
-                border: 0,
-                display: "flex",
-                flexDirection: "row",
-                flexWrap: "nowrap",
-              }}
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+                <div style={{
+                  position:"relative",
+                  paddingTop:"30px",
+                  paddingBottom:"26.25%",
+                  height:0,
+                  overflow:"hidden"
+                }}> 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6010852008485!2d81.76397671476502!3d21.12846438594454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c434ac2ae871%3A0x4e3568497a7e1d7e!2sInternational%20Institute%20of%20Information%20Technology%2C%20Naya%20Raipur!5e0!3m2!1sen!2sin!4v1656687809693!5m2!1sen!2sin"
+                width="500"
+                height="450"
+                marginHeight={40}
+                style={{
+                  border: 0,
+                  position:"absolute",
+                  top:0,
+                  left:0,
+                  height:"100%",
+                  width:"100%"
+                  
+                }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              </div>
+            </div>
           </div>
         </div>
-      </aside>
+      </div>
 
       <div class="px-4 py-16 sm:px-6 lg:px-8 lg:col-span-3">
         <div class="grid grid-cols-1 gap-0 sm:grid-cols-2">
@@ -166,6 +177,7 @@ const Footer = () => {
               <p
                 class="font-medium"
                 style={{
+                  
                   fontSize: "20px",
                   textDecorationLine: "underline",
                   textUnderlineOffset: "10px",
@@ -174,6 +186,17 @@ const Footer = () => {
                 Want to Reach Us :
               </p>
               <br />
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLScgbHZT0KD5Ok1GUbyXwiJNktf44uvh51fGO9XCkuVCVJXMfQ/viewform?embedded=true"
+                class="w-4/5 h-96"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+              >
+                Loading…
+              </iframe>
+
+              {/* <Form/> */}
 
               {/* <div class="relative mb-6">
                 <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -193,8 +216,8 @@ const Footer = () => {
                   id="input-group-1"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-half pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Full Name ..."
-                  onChange={inputsHandler}
-                  value={inputField.name}
+                  onChange={handleChange}
+                  value={name}
                 />
               </div>
 
@@ -216,8 +239,8 @@ const Footer = () => {
                   id="input-group-1"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-half pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="name@flowbite.com"
-                  onChange={inputsHandler}
-                  value={inputField.email}
+                  onChange={handleChange}
+                  value={email}
                 />
               </div>
 
@@ -238,19 +261,18 @@ const Footer = () => {
                   id="input-group-1"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-half pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Contact Number"
-                  onChange={inputsHandler}
-                  value={inputField.contact}
+                  onChange={handleChange}
+                  value={contact}
                 />
-              </div> */}
+              </div> 
 
-              {/* <Button outline={false} gradientDuoTone="cyanToBlue" onClick={submitButton}>
+              <Button outline={false} gradientDuoTone="cyanToBlue" onClick={handleSubmit}>
                 Submit
               </Button> */}
 
               {/* <Button outline={false} gradientDuoTone="cyanToBlue" onClick={() => openInNewTab('https://forms.gle/Kh3QpW2zrUXEc5gt9')}>
                 Contact Us
               </Button> */}
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgbHZT0KD5Ok1GUbyXwiJNktf44uvh51fGO9XCkuVCVJXMfQ/viewform?embedded=true" class="w-4/5 h-96" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </p>
             {/* <ul class="mt-8 space-y-2 text-sm">
               <li>Monday to Friday: 10am - 5pm</li>
@@ -262,11 +284,18 @@ const Footer = () => {
 
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <p class="font-medium" style={{ fontSize: "20px" }}>
+              <p
+                class="font-medium"
+                style={{
+                  fontSize: "20px",
+                  textDecorationLine: "underline",
+                  textUnderlineOffset: "10px",
+                }}
+              >
                 Quick Links
               </p>
 
-              <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
+              <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-100">
                 <a
                   class="hover:opacity-75"
                   href="https://www.iiitnr.ac.in/"
