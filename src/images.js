@@ -43,8 +43,11 @@ import image42 from "./assets/companies/cosgrid.png";
 import image43 from "./assets/companies/synopsys.png";
 import image44 from "./assets/companies/glencore.png";
 import image45 from "./assets/companies/neosoft.png";
+import image46 from "./assets/companies/angel-one.png";
+import image47 from "./assets/companies/nykaa.png";
+import image48 from "./assets/companies/utopia-lab.png";
 
-export default [
+const companiesArray = [
   {
     id: 1,
     name: "American Express",
@@ -315,4 +318,24 @@ export default [
     website: "https://www.neosofttech.com/",
     image: image45,
   },
+  {
+    id: 46,
+    name: "Angel One",
+    website: "https://www.angelone.in/",
+    image: image46,
+  },
+  {
+    id: 47,
+    name: "Nykaa",
+    website: "https://www.nykaa.com/",
+    image: image47,
+  },
+  {
+    id: 48,
+    name: "Utopia Labs",
+    website: "https://www.utopialabs.com/",
+    image: image48,
+  },
 ];
+
+export default companiesArray;
