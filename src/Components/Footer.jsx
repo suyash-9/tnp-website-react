@@ -15,8 +15,6 @@ import internshipBrochure from "../assets/brochures/internshipbrochure.pdf";
 import { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 
-
-
 AOS.init();
 
 const baseURL =
@@ -104,22 +102,32 @@ const Footer = () => {
     >
       <div class=" lg:relative lg:col-span-2 lg:block">
         <div class="grid grid-cols-1">
-          <div class="flex flex-row"
+          <div
+            class="flex flex-row"
             style={{
               marginTop: 50,
               marginLeft: 20,
-              
             }}
           >
             <div class="flex flex-col">
-            <img src={logo} style={{height:150, width:150,display:"flex",justifyContent:"center",alignItems:"center"}} alt="IIIT Naya Raipur Logo" />
+              <img
+                src={logo}
+                style={{
+                  height: 150,
+                  width: 150,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                alt="IIIT Naya Raipur Logo"
+              />
               <p
                 class="font-medium "
                 style={{
                   fontSize: "20px",
                   textDecorationLine: "underline",
                   textUnderlineOffset: "10px",
-                  marginTop:20
+                  marginTop: 20,
                 }}
               >
                 Address :
@@ -139,31 +147,32 @@ const Footer = () => {
                 Atal Nagar – 493661 Chhattisgarh
               </p>
               <br />
-                <div style={{
-                  position:"relative",
-                  paddingTop:"30px",
-                  paddingBottom:"26.25%",
-                  height:0,
-                  overflow:"hidden"
-                }}> 
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6010852008485!2d81.76397671476502!3d21.12846438594454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c434ac2ae871%3A0x4e3568497a7e1d7e!2sInternational%20Institute%20of%20Information%20Technology%2C%20Naya%20Raipur!5e0!3m2!1sen!2sin!4v1656687809693!5m2!1sen!2sin"
-                width="500"
-                height="450"
-                marginHeight={40}
+              <div
                 style={{
-                  border: 0,
-                  position:"absolute",
-                  top:0,
-                  left:0,
-                  height:"100%",
-                  width:"100%"
-                  
+                  position: "relative",
+                  paddingTop: "30px",
+                  paddingBottom: "26.25%",
+                  height: 0,
+                  overflow: "hidden",
                 }}
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6010852008485!2d81.76397671476502!3d21.12846438594454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c434ac2ae871%3A0x4e3568497a7e1d7e!2sInternational%20Institute%20of%20Information%20Technology%2C%20Naya%20Raipur!5e0!3m2!1sen!2sin!4v1656687809693!5m2!1sen!2sin"
+                  width="500"
+                  height="450"
+                  marginHeight={40}
+                  style={{
+                    border: 0,
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    height: "100%",
+                    width: "100%",
+                  }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -177,7 +186,6 @@ const Footer = () => {
               <p
                 class="font-medium"
                 style={{
-                  
                   fontSize: "20px",
                   textDecorationLine: "underline",
                   textUnderlineOffset: "10px",
@@ -187,7 +195,7 @@ const Footer = () => {
               </p>
               <br />
               <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLScgbHZT0KD5Ok1GUbyXwiJNktf44uvh51fGO9XCkuVCVJXMfQ/viewform?embedded=true"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeGh6BCKEBFodCqjC9Pwj081u0A5vWEwRWZbYBJX-HMq-C6Qg/viewform?embedded=true"
                 class="w-4/5 h-96"
                 frameborder="0"
                 marginheight="0"
@@ -195,7 +203,6 @@ const Footer = () => {
               >
                 Loading…
               </iframe>
-
               {/* <Form/> */}
 
               {/* <div class="relative mb-6">
