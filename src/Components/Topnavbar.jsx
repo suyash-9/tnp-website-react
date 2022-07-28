@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import placementBrochure from "../assets/brochures/placementbrochure.pdf";
 import internshipBrochure from "../assets/brochures/internshipbrochure.pdf";
+import "../css/Footer.css";
 
 const Topnavbar = () => {
   const sections = [
